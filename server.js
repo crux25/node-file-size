@@ -5,7 +5,7 @@ var path = require('path');
 var fs = require('fs');
 
 var app = express();
-var port = process.env.PORT | 3000;
+var port = process.env.PORT || 3000;
 app.get('/', function(req, res){
 	res.sendFile(path.join(__dirname + "/views/index.html"));
 });
